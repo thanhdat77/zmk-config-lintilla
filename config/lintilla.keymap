@@ -564,11 +564,11 @@
 
         layer_7 {
             bindings = <
-         &to 0                                                                                                                             &kp N2
-&kp TAB  &kp NUMBER_1        &kp Q  &hm NUMBER_4 X  &kp E  &kp R                                        &kp T   &kp Y  &kp U      &kp I    &kp O     &kp P
-&kp B    &hm LSHFT NUMBER_3  &kp A  &kp W           &kp D  &kp F                                        &kp G   &kp H  &kp J      &kp K    &kp L     &kp SEMI
-         &kp NUMBER_3        &kp Z  &kp S           &kp C  &kp G                                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                                                           &kp SPACE  &kp LCTRL  &kp V  &trans  &trans  &trans
+              &to 0                                                                                                              &kp N2
+&kp NUMBER_4  &kp NUMBER_1  &kp Q  &kp X  &kp E  &kp R                                        &kp T   &kp Y  &kp U      &kp I    &kp O     &kp P
+&kp B         &kp LSHFT     &kp A  &kp W  &kp D  &kp F                                        &kp G   &kp H  &kp J      &kp K    &kp L     &kp SEMI
+              &kp NUMBER_3  &kp Z  &kp S  &kp C  &kp G                                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                                 &kp SPACE  &kp LCTRL  &kp V  &trans  &trans  &trans
             >;
         };
     };
