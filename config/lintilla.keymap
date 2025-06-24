@@ -463,6 +463,16 @@
             bindings = <&bootloader>;
             key-positions = <1 41>;
         };
+
+        bt_clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 37>;
+        };
+
+        bt_clear_2 {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <40 1>;
+        };
     };
 
     keymap {
@@ -550,6 +560,16 @@
             >;
 
             label = "Media";
+        };
+
+        layer_7 {
+            bindings = <
+         &to 0                                                                                                                             &kp N2
+&kp TAB  &kp NUMBER_1        &kp Q  &hm NUMBER_4 X  &kp E  &kp R                                        &kp T   &kp Y  &kp U      &kp I    &kp O     &kp P
+&kp B    &hm LSHFT NUMBER_3  &kp A  &kp W           &kp D  &kp F                                        &kp G   &kp H  &kp J      &kp K    &kp L     &kp SEMI
+         &kp NUMBER_3        &kp S  &kp C           &kp V  &kp G                                        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                                           &kp SPACE  &kp LCTRL  &kp U  &trans  &trans  &trans
+            >;
         };
     };
 };
