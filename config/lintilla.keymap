@@ -484,7 +484,7 @@
 &sk LEFT_ALT  &kp Q       &kp W       &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y       &kp SQT     &none
 &sl_mod 3     &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LALT I  &hm LGUI O  &sl_mod 2
               &kp Z       &kp X       &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD  &kp FSLH
-                                                                &lt 2 ESCAPE  &lt 1 SPACE  &lt 6 TAB  &lt 5 ENTER  &lt 3 BACKSPACE  &lt 4 DELETE
+                                                                &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
 
             label = "Colemak-dh";
