@@ -485,11 +485,11 @@
 
         alphas {
             bindings = <
-              &kp C_MUTE                                                                                                                                                                &none
-&sk LEFT_ALT  &kp Q       &kp W       &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y       &kp SQT     &none
-&sl_mod 3     &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LALT I  &hm LGUI O  &sl_mod 2
-              &kp Z       &kp X       &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD  &kp FSLH
-                                                                &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
+           &kp C_MUTE                                                                                                                                                                &none
+&sl 3      &kp Q       &kp W       &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y       &kp SQT     &sl 1
+&sk LCTRL  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LALT I  &hm LGUI O  &sl_mod 2
+           &kp Z       &kp X       &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD  &kp FSLH
+                                                             &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
 
             label = "Colemak-dh";
@@ -498,7 +498,7 @@
         nav {
             bindings = <
        &none                                                                                                                                   &none
-&none  &none     &none     &none      &none      &none                                   &u_caps_word  &kp LS(INS)  &kp LC(INS)   &kp LS(DEL)  &kp LC(A)  &none
+&none  &none     &none     &none      &none      &none                                   &u_caps_word  &kp LS(INS)  &kp LC(INS)   &kp LS(DEL)  &kp LC(A)  &sl 2
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                   &kp LC(Z)     &kp DOWN     &kp UP_ARROW  &kp RIGHT    &kp RIGHT  &none
        &none     &none     &none      &none      &none                                   &kp HOME      &kp LEFT     &kp PG_DN     &kp PG_UP    &kp END
                                                  &none  &none  &none  &kp DEL  &kp BSPC  &kp RET
@@ -521,11 +521,11 @@
 
         num {
             bindings = <
-       &none                                                                                                                                         &none
-&none  &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none     &none     &none
-&sl 4  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-       &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT  &none
-                                                 &kp PERIOD            &kp NUMBER_0  &kp MINUS  &none  &none  &none
+           &none                                                                                                                                         &none
+&sl 4      &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none     &none     &none
+&sk LCTRL  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+           &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT  &none
+                                                     &kp PERIOD            &kp NUMBER_0  &kp MINUS  &none  &none  &none
             >;
 
             label = "Numbers";
@@ -534,7 +534,7 @@
         sym {
             bindings = <
        &none                                                                                                                                                   &none
-&none  &kp TILDE       &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE                                                         &none  &none      &none      &none     &none     &none
+&sl 4  &kp TILDE       &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE                                                         &none  &none      &none      &none     &none     &none
 &none  &kp SEMICOLON   &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                                                         &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
        &kp LEFT_BRACE  &kp EXCL  &kp AT     &kp HASH   &kp RIGHT_BRACE                                                  &none  &none      &none      &kp RALT  &none
                                                        &kp LPAR         &kp RIGHT_PARENTHESIS  &kp UNDER  &none  &none  &none
