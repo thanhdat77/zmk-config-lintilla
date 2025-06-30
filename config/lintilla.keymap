@@ -495,7 +495,7 @@
 
         alphas {
             bindings = <
-           &tog 3                                                                                                                                                                    &tog 1
+           &to 3                                                                                                                                                                     &tog 1
 &sl 3      &kp Q       &kp W       &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y       &kp SQT     &sl 1
 &sk LCTRL  &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LALT I  &hm LGUI O  &sl_mod 2
            &kp Z       &kp X       &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD  &kp FSLH
@@ -531,7 +531,7 @@
 
         num {
             bindings = <
-           &to 3                                                                                                                                         &none
+           &to 0                                                                                                                                         &none
 &trans     &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none     &none     &none
 &sk LCTRL  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
            &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT  &none
