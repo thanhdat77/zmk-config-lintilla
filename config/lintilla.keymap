@@ -483,6 +483,11 @@
             bindings = <&to 0>;
             key-positions = <38 39>;
         };
+
+        to_nav {
+            bindings = <&to 1>;
+            key-positions = <8 9>;
+        };
     };
 
     keymap {
