@@ -507,10 +507,10 @@
 
         nav {
             bindings = <
-       &none                                                                                                                                &tog 1
-&none  &none     &none     &none      &none      &none                                   &kp LA(Z)  &kp LS(INS)  &kp LC(INS)   &kp LA(TAB)  &kp LC(A)  &sl 2
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                   &kp LC(Z)  &kp DOWN     &kp UP_ARROW  &kp RIGHT    &kp RIGHT  &none
-       &none     &none     &none      &none      &none                                   &kp HOME   &kp LEFT     &kp PG_DN     &kp PG_UP    &kp END
+       &none                                                                                                                              &tog 1
+&none  &none     &none     &none      &none      &none                                   &kp LA(Z)  &kp LS(C)  &kp LC(V)     &kp LG(TAB)  &kp LC(A)  &sl 2
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                   &kp LC(Z)  &kp DOWN   &kp UP_ARROW  &kp RIGHT    &kp RIGHT  &none
+       &none     &none     &none      &none      &none                                   &kp HOME   &kp LEFT   &kp PG_DN     &kp PG_UP    &kp END
                                                  &none  &to 0  &none  &kp DEL  &kp BSPC  &kp RET
             >;
 
@@ -519,11 +519,11 @@
 
         Mouse {
             bindings = <
-       &none                                                                                                                                                        &none
-&none  &none         &none         &none      &win_ostroke  &none                                        &none     &mkp MB4        &mkp MB5        &none            &win_deg  &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LSHFT     &none                                        &mkp MB4  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp MB5  &none
-       &win_agrave   &none         &none      &none         &none                                        &none     &mmv MOVE_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &none
-                                                            &none  &win_dash  &none  &mkp MB3  &mkp MB1  &mkp MB2
+       &none                                                                                                                                                          &none
+&none  &none         &none         &none      &win_ostroke  &none                                    &kp C_AC_CLOSE  &kp C_AC_CLOSE  &kp C_SLEEP     &none            &win_deg  &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LSHFT     &none                                    &mkp MB4        &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp MB5  &none
+       &win_agrave   &none         &none      &none         &none                                    &none           &mmv MOVE_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &none
+                                                            &none  &to 0  &none  &mkp MB3  &mkp MB1  &mkp MB2
             >;
 
             label = "Mouse";
@@ -547,7 +547,7 @@
 &sl 4  &kp TILDE       &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE                                                         &none  &none      &none      &none     &none     &none
 &none  &kp SEMICOLON   &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                                                         &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
        &kp LEFT_BRACE  &kp EXCL  &kp AT     &kp HASH   &kp RIGHT_BRACE                                                  &none  &none      &none      &kp RALT  &none
-                                                       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp UNDER  &none  &none  &none
+                                                       &kp LPAR         &kp RIGHT_PARENTHESIS  &kp UNDER  &none  &to 0  &none
             >;
 
             label = "Sympols";
@@ -559,7 +559,7 @@
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN                                                  &none  &none      &none      &none     &none     &none
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK                                                   &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
        &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK                                            &none  &none      &none      &kp RALT  &none
-                                        &kp TAB          &kp SPC  &kp K_APPLICATION  &none  &none  &none
+                                        &kp TAB          &kp SPC  &kp K_APPLICATION  &none  &to 0  &none
             >;
 
             label = "Function";
@@ -567,11 +567,11 @@
 
         media {
             bindings = <
-            &tog 7                                                                                                                                                 &none
-&none       &none      &kp LA(Z)  &kp CAPSLOCK  &none          &none                                           &none       &ind_bat    &ind_con      &none         &none       &none
-&kp ESCAPE  &to 1      &to 2      &to 4         &to 3          &none                                           &none       &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
-            &kp SPACE  &kp TAB    &kp ENTER     &kp BACKSPACE  &kp DELETE                                      &out_tog    &bt_sel_0   &bt_sel_1     &bt_sel_2     &bt_sel_3
-                                                               &none       &none  &none  &kp C_STOP  &kp C_PP  &kp C_MUTE
+            &tog 7                                                                                                                                                        &none
+&none       &none      &kp LA(Z)  &kp CAPSLOCK  &none     &none                                           &kp CAPS    &ind_bat           &ind_con         &none           &none       &none
+&kp ESCAPE  &kp SPACE  &kp TAB    &kp RET       &kp BSPC  &kp DEL                                         &none       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &kp C_NEXT  &none
+            &to 1      &to 1      &to 2         &to 3     &kp DELETE                                      &out_tog    &bt_sel_0          &bt_sel_1        &bt_sel_2       &bt_sel_3
+                                                          &none       &to 0  &none  &kp C_STOP  &kp C_PP  &kp C_MUTE
             >;
 
             label = "Media";
