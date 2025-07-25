@@ -436,14 +436,14 @@
 
         combo_LBKT {
             bindings = <&hm LC(LSHFT) MINUS>;
-            key-positions = <17 18>;
+            key-positions = <22 23>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         combo_minus {
-            bindings = <&hm LC(LSHFT) LEFT_PARENTHESIS>;
-            key-positions = <21 22>;
+            bindings = <&hm RCTRL LEFT_PARENTHESIS>;
+            key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -475,7 +475,7 @@
         };
 
         bracket {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <5 6>;
         };
 
@@ -490,20 +490,15 @@
         };
 
         close_racket {
-            bindings = <&hm LCTRL RIGHT_PARENTHESIS>;
-            key-positions = <22 23>;
+            bindings = <&hm LC(LEFT_SHIFT) RIGHT_PARENTHESIS>;
+            key-positions = <18 17>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         racket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <9 10>;
-        };
-
-        racket2 {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <10 11>;
+            key-positions = <4 5>;
         };
     };
 
