@@ -500,6 +500,11 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 5>;
         };
+
+        mark {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
@@ -532,9 +537,9 @@
         Mouse {
             bindings = <
        &none                                                                                                                                                          &none
-&none  &none         &none         &none      &win_ostroke  &none                                        &kp LA(F4)  &kp A           &kp C_SLEEP     &none            &win_deg  &none
+&none  &none         &none         &none      &win_ostroke  &none                                        &kp LA(F4)  &kp A           &msc SCRL_DOWN  &msc SCRL_UP     &win_deg  &none
 &none  &kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LSHFT     &kp SPACE                                    &mkp MB4    &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp MB5  &none
-       &win_agrave   &none         &none      &none         &none                                        &none       &mmv MOVE_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &none
+       &win_agrave   &none         &none      &none         &none                                        &none       &mmv MOVE_LEFT  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none
                                                             &none      &to 0  &none  &mkp MB2  &mkp MB1  &mkp MB3
             >;
 
