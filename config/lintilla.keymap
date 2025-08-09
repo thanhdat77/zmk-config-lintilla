@@ -512,11 +512,11 @@
 
         alphas {
             bindings = <
-              &tog 3                                                                                                                                                               &tog 1
-&sk LEFT_ALT  &kp Q       &kp W  &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y       &kp SQT     &sl 1
-&sk LCTRL     &hm LGUI A  &kp R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &kp I       &hm LGUI O  &sl_mod 2
-              &kp Z       &kp X  &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD  &kp FSLH
-                                                           &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
+              &tog 3                                                                                                                                                                             &tog 1
+&sk LEFT_ALT  &kp Q       &kp W            &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y           &kp SQT     &sl 1
+&sk LCTRL     &hm LGUI A  &hm RIGHT_ALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LEFT_ALT I  &hm LGUI O  &sl_mod 2
+              &kp Z       &kp X            &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD      &kp FSLH
+                                                                     &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
 
             label = "Colemak-dh";
@@ -536,10 +536,10 @@
 
         Mouse {
             bindings = <
-       &none                                                                                                                                                          &none
-&none  &none         &none         &none      &win_ostroke  &none                                        &kp LA(F4)  &kp A           &msc SCRL_DOWN  &msc SCRL_UP     &win_deg  &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LSHFT     &kp SPACE                                    &mkp MB4    &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp MB5  &none
-       &win_agrave   &none         &none      &none         &none                                        &none       &mmv MOVE_LEFT  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none
+       &none                                                                                                                                                           &none
+&none  &none         &none         &none      &win_ostroke  &none                                        &kp LA(F4)  &msc SCRL_DOWN  &msc SCRL_UP    &mmv MOVE_X(500)  &mmv MOVE_X(-500)  &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LSHFT     &kp SPACE                                    &mkp MB4    &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT   &mkp MB5           &none
+       &win_agrave   &none         &none      &none         &none                                        &none       &mmv MOVE_LEFT  &msc SCRL_LEFT  &msc SCRL_RIGHT   &none
                                                             &none      &to 0  &none  &mkp MB2  &mkp MB1  &mkp MB3
             >;
 
@@ -585,7 +585,7 @@
         media {
             bindings = <
             &tog 7                                                                                                                                                        &none
-&none       &none      &kp LA(Z)  &kp CAPSLOCK  &none     &none                                           &kp CAPS    &ind_bat           &ind_con         &none           &none       &none
+&none       &none      &kp LA(Z)  &kp CAPSLOCK  &none     &none                                           &kp CAPS    &ind_bat           &ind_con         &bt BT_PRV      &bt BT_NXT  &none
 &kp ESCAPE  &kp SPACE  &kp TAB    &kp RET       &kp BSPC  &kp DEL                                         &none       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &kp C_NEXT  &none
             &to 1      &to 1      &to 2         &to 3     &kp DELETE                                      &out_tog    &bt_sel_0          &bt_sel_1        &bt_sel_2       &bt_sel_3
                                                           &none       &to 0  &none  &kp C_STOP  &kp C_PP  &kp C_MUTE
