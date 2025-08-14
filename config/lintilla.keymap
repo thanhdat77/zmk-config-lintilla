@@ -505,6 +505,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <10 11>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <21 22>;
+        };
     };
 
     keymap {
@@ -512,11 +517,11 @@
 
         alphas {
             bindings = <
-              &tog 3                                                                                                                                                                             &tog 1
-&sk LEFT_ALT  &kp Q       &kp W            &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y           &kp SQT     &sl 1
-&sk LCTRL     &hm LGUI A  &hm RIGHT_ALT R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LEFT_ALT I  &hm LGUI O  &sl_mod 2
-              &kp Z       &kp X            &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD      &kp FSLH
-                                                                     &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
+              &tog 3                                                                                                                                                                                &tog 1
+&sk LEFT_ALT  &kp Q           &kp W           &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y           &kp SQT   &sl 1
+&sk LCTRL     &hm LEFT_ALT A  &hm LEFT_WIN R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm LEFT_WIN I  &hm O O   &sl_mod 2
+              &kp Z           &kp X           &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD      &kp FSLH
+                                                                        &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
 
             label = "Colemak-dh";
@@ -524,11 +529,11 @@
 
         nav {
             bindings = <
-       &none                                                                                                                                    &tog 1
-&none  &none     &kp LG(TAB)  &kp LA(TAB)  &kp ENTER  &none                                     &kp LA(Z)   &kp LC(C)  &kp LC(V)     &kp LC(A)  &kp LC(A)  &sl 2
-&none  &kp LGUI  &kp LALT     &kp LCTRL    &kp LSHFT  &none                                     &kp LC(Z)   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp RIGHT  &none
-       &none     &none        &none        &none      &none                                     &kp HOME    &kp LEFT   &kp PG_DN     &kp PG_UP  &kp END
-                                                      &none  &to 0  &none  &kp ENTER  &kp BSPC  &kp DELETE
+       &none                                                                                                                                         &tog 1
+&none  &none         &kp LG(TAB)   &kp LA(TAB)  &kp ENTER  &none                                     &kp LA(Z)   &kp LC(C)  &kp LC(V)     &kp LC(A)  &kp LC(A)  &sl 2
+&none  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL    &kp LSHFT  &none                                     &kp LC(Z)   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp RIGHT  &none
+       &none         &none         &none        &none      &none                                     &kp HOME    &kp LEFT   &kp PG_DN     &kp PG_UP  &kp END
+                                                           &none  &to 0  &none  &kp ENTER  &kp BSPC  &kp DELETE
             >;
 
             label = "Navigation";
@@ -538,7 +543,7 @@
             bindings = <
        &none                                                                                                                                                           &none
 &none  &none         &none         &none      &win_ostroke  &none                                        &kp LA(F4)  &msc SCRL_DOWN  &msc SCRL_UP    &mmv MOVE_X(500)  &mmv MOVE_X(-500)  &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp RCTRL  &kp LSHFT     &kp SPACE                                    &mkp MB4    &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT   &mkp MB5           &none
+&none  &kp LEFT_ALT  &kp LEFT_WIN  &kp RCTRL  &kp LSHFT     &kp SPACE                                    &mkp MB4    &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT   &mkp MB5           &none
        &win_agrave   &none         &none      &none         &none                                        &none       &mmv MOVE_LEFT  &msc SCRL_LEFT  &msc SCRL_RIGHT   &none
                                                             &none      &to 0  &none  &mkp MB2  &mkp MB1  &mkp MB3
             >;
@@ -548,10 +553,10 @@
 
         num {
             bindings = <
-           &tog 3                                                                                                                                        &none
-&trans     &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none     &none     &none
-&sk LCTRL  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-           &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT  &none
+           &tog 3                                                                                                                                            &none
+&trans     &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none         &none         &none
+&sk LCTRL  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &none
+           &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT      &none
                                                      &kp PERIOD            &kp NUMBER_0  &kp MINUS  &none  &to 0  &none
             >;
 
