@@ -544,11 +544,11 @@
 
         num {
             bindings = <
-           &tog 3                                                                                                                                            &none
-&trans     &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none         &none         &none
-&sk LCTRL  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &none
-           &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT      &none
-                                                     &kp PERIOD            &kp NUMBER_0  &kp MINUS  &none  &to 0  &none
+          &tog 3                                                                                                                                            &none
+&trans    &kp TILDE         &kp N7  &kp N8  &kp N9  &kp NON_US_BACKSLASH                                         &none  &none      &none      &none         &none         &none
+&sk PLUS  &kp COLON         &kp N4  &kp N5  &kp N6  &kp EQUAL                                                    &none  &kp LSHFT  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &none
+          &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                                            &none  &none      &none      &kp RALT      &none
+                                                    &kp PERIOD            &kp NUMBER_0  &kp MINUS  &none  &to 0  &none
             >;
 
             label = "Numbers";
@@ -557,7 +557,7 @@
         sym {
             bindings = <
        &none                                                                                                                                                   &none
-&sl 4  &kp TILDE       &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE                                                         &none  &none      &none      &none     &none     &none
+&sl 4  &kp GRAVE       &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE                                                         &none  &none      &none      &none     &none     &none
 &none  &kp SEMICOLON   &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                                                         &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
        &kp LEFT_BRACE  &kp EXCL  &kp AT     &kp HASH   &kp RIGHT_BRACE                                                  &none  &none      &none      &kp RALT  &none
                                                        &kp LPAR         &kp RIGHT_PARENTHESIS  &kp UNDER  &none  &to 0  &none
