@@ -508,11 +508,11 @@
 
         alphas {
             bindings = <
-              &tog 3                                                                                                                                                                                               &tog 1
-&sk LEFT_ALT  &kp Q                &kp W                &kp F        &kp P        &kp B                                                               &kp J         &kp L        &kp U        &kp Y                &kp SQT       &sl 1
-&sk LCTRL     &hm_slow LEFT_ALT A  &hm_slow LEFT_WIN R  &hm LCTRL S  &hm LSHFT T  &kp G                                                               &kp M         &hm LSHFT N  &hm LCTRL E  &hm_slow LEFT_WIN I  &hm_slow O O  &sl_mod 2
-              &kp Z                &kp X                &kp C        &kp D        &kp V                                                               &kp K         &kp H        &kp COMMA    &kp PERIOD           &kp FSLH
-                                                                                  &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 BACKSPACE  &lt 6 DELETE
+              &tog 3                                                                                                                                                                                           &tog 1
+&sk LEFT_ALT  &kp Q                &kp W                &kp F        &kp P        &kp B                                                           &kp J         &kp L        &kp U        &kp Y                &kp SQT       &sl 1
+&sk LCTRL     &hm_slow LEFT_ALT A  &hm_slow LEFT_WIN R  &hm LCTRL S  &hm LSHFT T  &kp G                                                           &kp M         &hm LSHFT N  &hm LCTRL E  &hm_slow LEFT_WIN I  &hm_slow O O  &sl_mod 2
+              &kp Z                &kp X                &kp C        &kp D        &kp V                                                           &kp K         &kp H        &kp COMMA    &kp PERIOD           &kp FSLH
+                                                                                  &lt 6 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 4 ENTER  &lt 3 SPACE  &lt 6 DELETE
             >;
 
             label = "Colemak-dh";
