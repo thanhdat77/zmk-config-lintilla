@@ -10,7 +10,7 @@
 
 &mmv {
     time-to-max-speed-ms = <300>;
-    acceleration-exponent = <2>;    // 0=không accel, 1=tuyến tính (default), 2=bậc hai
+    acceleration-exponent = <3>;    // 0=không accel, 1=tuyến tính (default), 2=bậc hai, 3=bậc ba
 };
 
 / {
